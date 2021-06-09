@@ -1,0 +1,33 @@
+body{
+    background-color:red;
+    margin:0;
+    
+}
+header{
+    height: 5em;
+    width: auto;
+    margin:0em;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    margin:0em
+}
+nav{
+    display: flex;
+    margin-right: 1.5em;
+}
+nav li{
+    list-style: none;
+    display: inline;
+    margin:0 .1em;
+    color: whitesmoke;
+    
+}
+nav li a{
+    color: whitesmoke;
+    text-decoration: none;
+    text-transform: uppercase;
+}
