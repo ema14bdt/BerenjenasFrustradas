@@ -1,69 +1,84 @@
 *{
-      margin: 0; 
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header{
-    height: auto;   /* height es el alto */
-    width: 100%;       /* Ancho del header */
-    background-color: #181818;
-    display: flex;   /* se hace flexible para poder modificarlo como quieras*/
-    justify-content: space-between;      /* le da una ubicacion ordenada a los elementos que esten dentro */
-    align-items: center;          /*centra los elementos*/
-    text-transform: uppercase;
-    box-shadow: black ;
+  height: auto;   /* height es el alto */
+  width: 100%;       /* Ancho del header */
+  background-color: #181818;
+  display: flex;   /* se hace flexible para poder modificarlo como quieras*/
+  justify-content: space-between;      /* le da una ubicacion ordenada a los elementos que esten dentro */
+  align-items: center;          /*centra los elementos*/
+  text-transform: uppercase;
+  box-shadow: black ;
 }
 
 .logo{
-    height: 5em;
-    width: auto;
+  height: 5em;
+  width: auto;
 }
 
 .titulo a, .navegacion ul{
-    display: flex;
-    align-items: center;
-    
+  display: flex;
+  align-items: center;
+  
 }
 
 ul li{
-    font-size: .8em;
-    padding: 0.3em;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
-    
+  font-size: .8em;  
+  list-style: none;  
 }
 a:hover{
-    color: crimson;
+  color: crimson;
 
 }
 
 .navegacion ul{
-    margin: 0 1em;  
-} 
+  margin: 0 1em;
+  font-size: 1.1em
+}
+.navegacion ul li a{
+  font-family: 'Roboto', sans-serif;
+  padding: 0.3em;
+}
 
 a{
-    text-decoration: none;       /* sacamos subrayado de las palabras linkeadas*/
+  text-decoration: none;       /* sacamos subrayado de las palabras linkeadas*/
 
 }
 
 h1{
-    font-family: 'Do Hyeon', sans-serif;
-    font-size: 1.5em;
+  font-family: 'Do Hyeon', sans-serif;
+  font-size: 1.5em;
 }
 
 main{
-    height: 35em;
+  height: 35em;
 }
 
 footer{
-    height: auto;
-    background-color: #181818;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;   /* justify mueve vertical */
-    align-items: center;        /* y align horizontal */
-    padding: 2em 0;
-    font-size: 1.5em;
-    text-align: center;   
+  height: auto;
+  background-color: #181818;
+  /*flex-direction: column;*/
+  /*justify-content: center;    justify mueve vertical */
+  align-items:flex-start;        /* y align horizontal */
+  font-size: 1.5em;
+     
 
 }
- 
+
+.piepagina{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 1.5em 1em;
+}
+
+.piepagina h4{
+    color: whitesmoke
+}
+
+.piepagina ul{
+    padding: 0;
+}
