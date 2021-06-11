@@ -1,11 +1,12 @@
 const express = require('express')
 const app = express()
+const port = 3050
 const path = require('path')
-const views = path.join(__dirname,'/views')
-const port = 3030
+const views = path.join(__dirname, 'views')
 
 app.use(express.static('public'))
 
-app.get('/', (req,res)=>{res.sendFile(path.join(views,'home.html'))})
+app.listen(port, () => console.log(`run server http://localhost:${port}`));
 
-app.listen(port, ()=>{console.log(`Puerto subido en http://localhost:${port}`)})
+app.get( '/', (req,res) => res.sendFile(path.join(views, 'home.html')))
+
