@@ -4,10 +4,24 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+/* Comienzo cuerpo de la pagina + elementos generales*/
 body{
   background-color: #252525;
 }
+a{
+  text-decoration: none;       /* sacamos subrayado de las palabras linkeadas*/
+}
+ul li{
+  font-size: .8em;  
+  list-style: none;  
+}
+a:hover{
+  color: crimson;
 
+}
+/* Fin comienzo cuerpo de la pagina + elementos generales*/
+
+/* Comienzo de Cabecera */
 header{
   height: auto;   /* height es el alto */
   width: 100%;       /* Ancho del header */
@@ -28,49 +42,66 @@ header:hover{
   width: auto;
 }
 
+a{
+  color:blueviolet
+}
+
+.buscador{
+  width: 23em;
+  height: auto;
+  border-radius: .5em 0 0 .5em;
+  padding-left: .5em
+}
+.formsearch{
+  height:2em;
+  display:flex;
+  align-items:center;
+  border-color: transparent;
+}
+
+.botonbuscar{
+  height:2em;
+  padding: 0 .8em;
+  background-color: blueviolet;
+  color:whitesmoke;
+  border-radius: 0 .5em .5em 0;
+  border-color: transparent;
+}
 .titulo a, .navegacion ul{
   display: flex;
   align-items: center;
-  
-}
-
-ul li{
-  font-size: .8em;  
-  list-style: none;  
-}
-a:hover{
-  color: crimson;
-
 }
 
 .navegacion ul{
-  margin-right: 1em;
-  font-size: 1.3em
+  font-size: 1.2em
 }
 
 .navegacion ul li{
+  margin:0px;
   border-right: 1px solid #07c900;
+}
+
+.navegacion ul li:last-child{
+  border-right: none;
 }
 
 .navegacion ul li a{
   font-family: 'Roboto', sans-serif;
-  padding: 0.3em;
-}
-
-a{
-  text-decoration: none;       /* sacamos subrayado de las palabras linkeadas*/
-
+  padding: 0px;
 }
 
 h1{
   font-family: 'Do Hyeon', sans-serif;
   font-size: 1.4em;
+  margin:0
 }
+/* Fin cabezera */
 
 main{
   height: 25em;
 }
 
+/* Comienzo del pie de pagina */
 footer{
   height: auto;
   background-color: #181818;
@@ -94,31 +125,6 @@ footer{
 .piepagina ul{
     padding: 0;
 }
-
-.buscador{
-  width: 23em;
-  height: auto;
-  border-radius: .5em 0 0 .5em;
-  padding-left: .5em
-
-}
-
-.formsearch{
-  height:2em;
-  display:flex;
-  align-items:center;
-  border-color: transparent;
-}
-
-.botonbuscar{
-  height:2.31em;
-  padding: 0 .8em;
-  background-color: blueviolet;
-  color:whitesmoke;
-  border-radius: 0 .5em .5em 0;
-  border-color: transparent;
-}
-
 .redes ul{
   display:flex;
   margin: .5em 0;
@@ -129,5 +135,34 @@ footer{
   margin-right:.3em;
   font-size: 1.5em;
 }
+/* Fin pie de pagina */
 
+@media (max-width:425px){
+  h1{
+    font-size:.7em
+  }
 
+  .logo{
+    height: 2.5em;
+  }
+
+  .buscador{
+    width:8em
+  }
+ 
+}
+
+@media (min-width:320px) and (max-width:425px){
+  .buscador{
+    width:2em;
+    background-color: darkblue;
+  }
+
+}
+
+@media (min-width:1024px){
+  .buscador{
+    width: 15em;
+  }
+
+}
