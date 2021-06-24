@@ -95,11 +95,7 @@ h1{
   font-size: 1.4em;
   margin:0
 }
-/* Fin cabezera */
 
-main{
-  height: 25em;
-}
 
 /* Comienzo del pie de pagina */
 footer{
@@ -165,4 +161,51 @@ footer{
     width: 15em;
   }
 
+}
+
+/*productos*/
+ main{
+  margin: 2em 8em;
+}
+
+/*Modificacion del titulo*/
+.mas-vendidos h2{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titulo-vendidos{
+  color: blueviolet;
+  background-color: #181818;
+  border-radius: 1em;
+  padding: .5em;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+}
+
+/*imagen de articulo*/
+.article-product a img{
+  width: 100%;
+}
+  
+/*articulo*/
+.article-product{
+  width: 12em;
+  height: 25em;
+  padding: .5em;
+  background-color: #181818;
+  border-radius: 1em;
+  box-shadow: 0px 0px 18px 0px rgba(190, 0, 207, 0.7);
+}
+
+.article-product:hover{
+  box-shadow: 0px 0px 18px 0px rgba(0, 179, 54, 0.9);
+}
+
+.contenedor-articulo {
+  display: flex;
+  justify-content: space-between;
 }
