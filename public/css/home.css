@@ -228,3 +228,11 @@ main{
   display: flex;
   justify-content: space-between;
 }
+/* caja hidden */
+.caja-hidden{
+
+  height: 10em;
+  width: 10em;
+  border: solid 1px green;
+  overflow-y: scroll;
+}
