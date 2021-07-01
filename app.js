@@ -8,5 +8,6 @@ app.use(express.static('public'))
 
 app.listen(port, () => console.log(`run server http://localhost:${port}`));
 
-app.get( '/', (req,res) => res.sendFile(path.join(views, 'home.html')))
+app.get('/', (req,res) => res.sendFile(path.join(views, 'home.html')))
+app.get('/plantilla', (req,res) => res.sendFile(path.join(views, 'plantilla.html')))
 
