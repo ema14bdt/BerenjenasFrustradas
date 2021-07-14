@@ -1,0 +1,77 @@
+/* Comienzo de Cabecera */
+header{
+    height: auto;   /* height es el alto */
+    width: 100%;       /* Ancho del header */
+    background-color: #181818;
+    display: flex;   /* se hace flexible para poder modificarlo como quieras*/
+    justify-content: space-between;      /* le da una ubicacion ordenada a los elementos que esten dentro */
+    align-items: center;          /*centra los elementos*/
+    text-transform: uppercase;
+    box-shadow: 0px 0px 18px 0px rgba(190, 0, 207, 0.7);
+}
+  
+header:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 179, 54, 0.9)
+}
+  
+.logo{
+    height: 5em;
+    width: auto;
+}
+  
+a{
+    color:blueviolet
+}
+  
+.buscador{
+    width: 23em;
+    height: auto;
+    border-radius: .5em 0 0 .5em;
+    padding-left: .5em
+}
+
+.formsearch{
+    height:2em;
+    display:flex;
+    align-items:center;
+    border-color: transparent;
+}
+  
+.botonbuscar{
+    height:2em;
+    padding: 0 .8em;
+    background-color: blueviolet;
+    color:whitesmoke;
+    border-radius: 0 .5em .5em 0;
+    border-color: transparent;
+}
+.titulo a, .navegacion ul{
+    display: flex;
+    align-items: center;
+} 
+  
+.navegacion ul{
+    font-size: 1.2em
+}
+  
+.navegacion ul li{
+    margin:0px;
+    border-right: 1px solid #07c900;
+}
+  
+.navegacion ul li:last-child{
+    border-right: none;
+}
+  
+.navegacion ul li a{
+    font-family: 'Roboto', sans-serif;
+    padding: 0px;
+}
+  
+h1{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 1.4em;
+    margin:0
+}
+  
+/* finde la cabecera */

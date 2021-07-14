@@ -1,0 +1,35 @@
+/* Comienzo del pie de pagina */
+footer{
+    height: auto;
+    background-color: #181818;
+    /*flex-direction: column;*/
+    /*justify-content: center;    justify mueve vertical */
+    align-items:flex-start;        /* y align horizontal */
+    font-size: 1.3em;
+}
+  
+.piepagina{
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding: 1.5em 1em;
+}
+  
+.piepagina h4{
+    color: whitesmoke
+}
+  
+.piepagina ul{
+    padding: 0;
+}
+.redes ul{
+    display:flex;
+    margin: .5em 0;
+    padding-inline-start: 0px;
+}
+  
+.redes ul li a i{
+    margin-right:.3em;
+    font-size: 1.5em;
+}
+/* Fin pie de pagina */

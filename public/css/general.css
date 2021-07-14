@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Comienzo cuerpo de la pagina + elementos generales*/
+body{
+  background-color: #f1f1f1a6;
+}
+a{
+  text-decoration: none;       /* sacamos subrayado de las palabras linkeadas*/
+}
+ul li{
+  font-size: .8em;  
+  list-style: none;  
+}
+a:hover{
+  color: crimson;
+
+}
+/* Fin comienzo cuerpo de la pagina + elementos generales*/
