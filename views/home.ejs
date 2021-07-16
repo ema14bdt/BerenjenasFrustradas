@@ -6,13 +6,13 @@
 <body>
  
     <!-- header -->
-    <%-include('./partials/header.ejs')%>
+    <%-include('./partials/header')%>
     <main>
         <!--Contenido de la página-->
-        <% for (let contador =0 ;contador <= 5; contador++ ){ %> 
-            <p>hola<%=contador %> </p>
-           <% }%>
-            
+        <!-- Muestra de JS en EJS (quitar los #)-->
+        <%# for (let contador =0 ;contador <= 5; contador++ ){ %>
+            <!--<p>hola<%#contador %> </p>-->
+        <%# }%>   
 
         <div class="container titulo-vendidos mas-vendidos">
             <h2>Los mas vendidos</h2>
@@ -68,51 +68,6 @@
                     <button><a href="/productCart.html">Carrito</a></button></article>
             </div>
         </section>
-        
-        <!-- <div class="contenedor-articulo">
-
-            <article class="article-product">
-                <a href="">
-                    <img src="/images/berenjena.jpg" alt="Berenjena 1">
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button>
-                </a>
-                <h3>Berenjena funny</h3>
-                <p>Despertador berenjena con alarma graciosa.</p>
-                <h6>$1.000</h6>
-                <span>-20%</span>
-                <button><a href="/productDetail.html">Ver producto</a></button>
-                <button><a href="/productCart.html">Carrito</a></button>
-            </article>
-
-            <article class="article-product">
-                <a href="">
-                    <img src="/images/berenjena.jpg" alt="Berenjena 1">
-                </a>
-                <h3>Berenjena funny</h3>
-                <p>Despertador berenjena con alarma graciosa.</p>
-                <h6>$1.000</h6>
-                <span>-20%</span>
-                <button><a href="/productDetail.html">Ver producto</a></button>
-                <button><a href="/productCart.html">Carrito</a></button>
-            </article>
-            <article class="article-product">
-                <a href="">
-                    <img src="/images/berenjena.jpg" alt="Berenjena 1">
-                </a>
-                <h3>Berenjena funny</h3>
-                <p>Despertador berenjena con alarma graciosa.</p>
-                <h6>$1.000</h6>
-                <span>-20%</span>
-                <button><a href="/productDetail.html">Ver producto</a></button>
-                <button><a href="/productCart.html">Carrito</a></button>
-            </article>
-
-        </div> -->
 
     </main>
    <!-- footer -->
