@@ -1,7 +1,10 @@
 var express = require('express');
 var router = express.Router();
 const mainController =require('../controllers/indexController');
+var loginvalidator = require('../validation/loginValidator')
 /* GET home page. */
 router.get('/', mainController.home);
+router.get('/login',loginvalidator, mainController.login);
+router.post('/login', mainController.processlogin);
 
 module.exports = router;

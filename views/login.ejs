@@ -9,12 +9,27 @@
     <main>
         <!--Contenido de la página-->
         <div class="article-product logeo">
-            holis
+            <div class="container">
+                <form action="/login" method="post">
+                    <label for="email">
+                        <p>email:</p>
+                    </label>
+                   <input type="email" name="email" id="email">
+                   <span><%= errors.email.msg %> </span>
+                   <label for="contrasenia">
+                       contraseña: 
+                   </label>
+                   <input type="password" name="contrasenia" id="contrasenia">
+                   <input type="submit" value="enviar">
+
+                
+                </form>
+            </div>
         </div>
     </main>
     <!-- Pie de la página -->
     <%- include('./partials/footer') %> 
-    <%- include('/partials/bootstrap-js') %> 
+    <%- include('./partials/bootstrap-js') %> 
 </body>
 
 </html>
