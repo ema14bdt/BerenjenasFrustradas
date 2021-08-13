@@ -15,7 +15,9 @@
                         <p>email:</p>
                     </label>
                    <input type="email" name="email" id="email">
+                   <% if(locals.errors && errors.email){ %> <!-- comprobamos si hay errores(practica) -->
                    <span><%= errors.email.msg %> </span>
+                   <% } %> 
                    <label for="contrasenia">
                        contraseña: 
                    </label>
