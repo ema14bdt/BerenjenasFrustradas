@@ -10,11 +10,15 @@
         <!--Contenido de la página-->
         <div class="form-login logeo">
             <div class="container">
-                <form action="/login" method="post">
-                    <div class="container loginformulario" >
+                <form action="/register" method="post">
+                    <div class="container registerformulario" >
                         <div class="main-login">
                             <img src="/images/0001.png" alt="logo" class="logo">
                         </div>
+
+                        <label for="nombre">
+                            <p>Nombre</p>
+                        </label>
                         
                         <label for="email">
                             <p>email:</p>
@@ -30,6 +34,11 @@
                             <p>contraseña:</p>
                         </label>
                         <input type="password" name="contrasenia" id="contrasenia">
+                        <label for="confirmar">
+                            <p>Confirmar contraseña:</p>
+                        </label>
+                        <input type="password" name="confirmar" id="confirmar">
+                        
                         <input type="submit" value="enviar">
                     </div>               
                 

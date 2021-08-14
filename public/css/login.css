@@ -1,0 +1,33 @@
+/* .logeo{
+    display: flex;
+    width: 40%;
+    margin: 3em 0;
+    padding: 2em 4em;
+} */
+
+.form-login{
+    width: 40%;
+    height: auto;
+    padding: 2em 4em;
+    background-color: #181818;
+    border-radius: .3em;
+    box-shadow: 0px 0px 18px 0px rgba(190, 0, 207, 0.7);
+    margin: 3em 0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+  }
+.main-login{
+    display: flex;
+    justify-content: center;
+}
+.loginformulario{
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+}
+.loginformulario :nth-child(6){
+    margin: 1em 1.5em;
+    background-color: teal;
+    border-radius: .3em;
+}

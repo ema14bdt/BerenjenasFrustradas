@@ -6,5 +6,6 @@ var loginvalidator = require('../validation/loginValidator')
 router.get('/', mainController.home);
 router.get('/login',loginvalidator, mainController.login);
 router.post('/login', mainController.processlogin);
+router.get('/register', mainController.register)
 
 module.exports = router;

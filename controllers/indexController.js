@@ -27,5 +27,10 @@ module.exports = {
         }else{
             res.render('login', {errors:errors.mapped()})
         } //renderizar el login de nuevo en caso de errores
+    },
+    register: (req, res) => {
+        res.render('register', {
+            title: 'Register'
+        })
     }
 }
