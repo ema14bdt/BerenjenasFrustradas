@@ -10,13 +10,19 @@
                 <!--Contenido de la página-->
                 <div class="form-login logeo">
                     <div class="container">
-                        <form action="/register" method="post">
+                        <form action="/register" enctype="multipart/form-data"
+                        method="post">
                             <div class="container registerformulario">
                                 <div class="main-login">
                                     <img src="/images/0001.png" alt="logo" class="logo">
                                 </div>
-
+                                
                                 <div style="display: flex; flex-direction: column; justify-content: space-between;">
+                                    <div>
+                                        <label for="avatar"><p>avatar:</p></label>
+                                        <input type="file" name="avatar" id="avatar">
+                                    </div>
+
                                     <div>
                                         <label for="nombre">
                                             <p>Nombre</p>

@@ -31,8 +31,12 @@
                     <li class="nav-item"><a href="" class="nav-link">inicio</a></li>
                     <li class="nav-item"><a href="" class="nav-link">nosotros</a></li>
                     <li class="nav-item"><a href="" class="nav-link">contacto</a></li>
+                    <% if (locals.usuario){  %> 
+                    <li class="nav-item"><a class="nav-link"><%= locals.usuario.nombre  %> </a></li>
+                    <% }else{ %> 
                     <li class="nav-item"><a href="/login" class="nav-link">ingresar</a></li>
                     <li class="nav-item"><a href="/register" class="nav-link">registrate</a></li>
+                    <% } %> 
                 </ul>
             </div>
 
