@@ -4,7 +4,7 @@ const mainController =require('../controllers/indexController');
 var loginvalidator = require('../validation/loginValidator')
 /* GET home page. */
 router.get('/', mainController.home);
-router.get('/login',loginvalidator, mainController.login);
+router.get('/login', mainController.login);
 router.post('/login', mainController.processlogin);
 router.get('/register', mainController.register)
 
