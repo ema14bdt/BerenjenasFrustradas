@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "nombre": "Sticker Berenjena funny",
+        "description": "Imagen de berenjena divertida",
+        "price": 99.99,
+        "image": "berenjena.jpg",
+        "category": "sticker"
+    },
+    {
+        "id": 2,
+        "nombre": "Berenjena china por Kg",
+        "description": "Berenjenas importadas directamente de China",
+        "price": 249.90,
+        "image": "berenjena-china.jpg",
+        "category": "alimento"
+    },
+    {
+        "id": 3,
+        "nombre": "Coraje 'El perro cobarde'",
+        "description": "Imagen de coraje el perro cobarde disfrazado de berenjena",
+        "price": 99.99,
+        "image": "berenjena coraje.jpg",
+        "category": "sticker"
+    },
+    {
+        "id": 4,
+        "nombre": "Berenbrujo",
+        "description": "Imagen de un mago berenjena",
+        "price": 99.99,
+        "image": "Brujo.png",
+        "category": "sticker"
+    },
+    {
+        "id": 5,
+        "nombre": "Berenjena al escabeche",
+        "description": "Uno de nuestros platos bandera, una delicia al paladar",
+        "price": 199.99,
+        "image": "escabeche.jpg",
+        "category": "alimento"
+    },
+    {
+        "id": 6,
+        "nombre": "San Jacobos de berenjenas",
+        "description": "Plato internacional con el amor de nuestras berenjenas",
+        "price": 299.99,
+        "image": "San-Jacobos-de-berenjena.jpg",
+        "category": "alimento"
+    }
+]

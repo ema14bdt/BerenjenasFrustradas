@@ -21,51 +21,20 @@
         <!-- productos -->
         <section class="contenedor container">
             <div class="contenedor-section">
-                <article class="article-product">
-                    <a href="/productDetail.html"><img src="/images/berenjena.jpg" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button>
-                </article>
 
-                <article class="article-product"><a href="/productDetail.html"><img src="/images/berenjena-china.jpg" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button></article>
-                <article class="article-product"><a href="/productDetail.html"><img src="/images/berenjena coraje.jpg" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button></article>
-                <article class="article-product"><a href="/productDetail.html"><img src="/images/Brujo.png" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button></article>
-                <article class="article-product"><a href="/productDetail.html"><img src="/images/escabeche.jpg" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button></article>
-                <article class="article-product"><a href="/productDetail.html"><img src="/images/San-Jacobos-de-berenjena.jpg" alt="berenjena1"></a>
-                    <h3>Berenjena funny</h3>
-                    <p>Despertador berenjena con alarma graciosa.</p>
-                    <h6>$1.000</h6>
-                    <span>-20%</span>
-                    <button><a href="/productDetail.html">Ver producto</a></button>
-                    <button><a href="/productCart.html">Carrito</a></button></article>
+                <%# products[0].nombre %> 
+                <% products.forEach(productos => { %> 
+                    <article class="article-product">
+                        <a href="/detail/<%= productos.id %> "><img src="/images/products/<%= productos.image %>" alt="<%= productos.nombre %> "></a>
+                        <h3><%= productos.nombre %></h3>
+                        <p><%= productos.description %></p>
+                        <h6>$<%= productos.price %></h6>
+                        <button><a href="/detail/<%= productos.id %>">Ver producto</a></button>
+                        <button><a href="/cart/">Carrito</a></button>
+                    </article>
+
+                <% }) %> 
+
             </div>
         </section>
 

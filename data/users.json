@@ -4,34 +4,23 @@
     "nombre": "",
     "avatar": "",
     "email": "",
-    "password": ""
+    "password": "",
+    "rol": ""
   },
   {
     "name": "dawdawd",
     "email": "wewrwefres@fds.com",
     "contrasenia": "$2a$10$tSoTJr/YJA7JQfpztDEU5ueIHE4ssSWcQP2k7hyTApXcSnJ.Z0Oyi",
     "avatar": "avatar-1629410069661.jpg",
-    "id": 2
+    "id": 2,
+    "rol": "usuario"
   },
   {
-    "name": "dawdawd",
-    "email": "wewrwefres@fdsf.com",
-    "contrasenia": "$2a$10$.f86dvotvj2WS3EvuUN/9Oj0GOwal/R//nGYncriA98ePy8zyU3x2",
-    "avatar": "avatar-1629410179607.png",
-    "id": 3
-  },
-  {
-    "name": "gonza",
-    "email": "wewrwefres@fdsf.com",
-    "contrasenia": "$2a$10$aE5ZrRJLAdjSLOtr6t4P1OiyL//IWU7BC6bejsjzHoL8BkHRuAyse",
-    "avatar": "avatar-1629412152351.jpg",
-    "id": 4
-  },
-  {
-    "name": "gonza",
-    "email": "gonzalo220201@gmail.com",
-    "contrasenia": "$2a$10$qH348f4a52m4Ybfc5rbVselyGwpJaPLgEqdKL8ieun0sZfZGRRCTu",
-    "avatar": "avatar-1629412585038.jpg",
-    "id": 5
+    "name": "Carpincho",
+    "email": "carpincho@live.com.ar",
+    "contrasenia": "$2a$10$hPXNSXksuIUTO96OqVIxreYTkWJab2eq9XNKi8a84tsEb9dDRq1aa",
+    "avatar": "avatar-1629517589609.jpg",
+    "id": 3,
+    "rol": "usuario"
   }
 ]

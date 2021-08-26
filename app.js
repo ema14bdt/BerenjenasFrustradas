@@ -4,10 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var session = require('express-session');
+
+const cookieCheck = require('./middlewares/cookiecheck')
 const localsUserCheck = require('./middlewares/localsusercheck');
 
-
 var indexRouter = require('./routes/index');
+var userRouter = require('./routes/users')
 
 var app = express();
 
@@ -19,11 +21,14 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(session({secret:'berenjenasFrustradas',resave:false, saveUninitialized:false}));
+app.use(session({secret:'berenjenasFrustradas',resave:false, saveUninitialized:true}));
 app.use(express.static(path.join(__dirname, 'public')));
+
 app.use(localsUserCheck);
+app.use(cookieCheck)
 
 app.use('/', indexRouter);
+app.use('/', userRouter)
 
 
 // catch 404 and forward to error handler
